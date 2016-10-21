@@ -1,0 +1,22 @@
+<h1>
+  {{title}}
+</h1>
+
+<table class="bordered highlight">
+  <thead>
+    <tr>
+      <th data-field="name">Item Name</th>
+      <th data-field="price">Item Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="item-row" *ngFor="let item of items">
+      <td>{{item.name}}</td>
+      <td>$ {{item.price}}</td>
+    </tr>
+    <tr>
+      <td><b>Total</b></td>
+      <td><b>$ {{total}}</b></td>
+    </tr>
+  </tbody>
+</table>
